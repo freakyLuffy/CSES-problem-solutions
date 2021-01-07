@@ -26,13 +26,7 @@ void solve(){
 
 	
 	}
-	//cout<<1;
-	// cin>>t;
-	// while(t--)
-	// {
-		
-		
-	// }
+	
 }
 int main() {
 	  
