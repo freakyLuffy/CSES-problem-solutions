@@ -51,7 +51,7 @@ void solve(){
 		cout<<v[n-k]<<" "; 
 				k++;
 	}
-//	cout<<"\n";
+
 	if(sum1!=sum/2)
 	{
 		cout<<sum/2-sum1;
