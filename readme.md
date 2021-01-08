@@ -4,4 +4,4 @@
 
 In this repository, I'll be posting all CSES problems solutions.
 
-#Drop a star , if this helped you!
+Drop a star , if this helped you!
