@@ -33,34 +33,37 @@ using namespace std;
 #define dbg(x) cout<<#x<<"=="<<x<<"\n"
 #define inf 1LL<<60
 void solve(){
-	ll n,x;
-	cin>>n>>x;
+	ll n,m,k;
+	cin>>n>>m>>k;
 	v(ll,v,n);
 	for(int i=0;i<n;i++)
 		cin>>v[i];
 	sort(all(v));
-	ll val=0;
-	int ans=0;
-	int i=0;
  
-	int j=n-1;
-	while(i<=j)
-	{
-      
-      if(v[i]+v[j]<=x)
-      {
-      	i++;
-      	j--;
-      	
-      }
-      else{
-      	j--;
-      }
-      ans++;
-  }
-      cout<<ans<<"\n";
+	v(ll,v1,m);
+	for(int i=0;i<m;i++)
+		cin>>v1[i];
+	sort(all(v1));
+	int i=0,j=0,ans=0;
+	 while(i<n && j<m)
+	 {
+	 	if(v1[j]>=(v[i]-k) && v1[j]<=(v[i]+k))
+	 	{
+	 		i++;
+	 		j++;
+	 		ans++;
+	 	}
+	 	else if(v1[j]<(v[i]-k))
+	 	{
+	 		j++;
+	 	}
+	 	else if(v1[j]>(v[i]+k))
+	 	{
+	 		i++;
+	 	}
  
- 
+	 }
+	cout<<ans;
  
 }
 int main() {
