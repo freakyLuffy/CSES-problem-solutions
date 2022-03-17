@@ -67,7 +67,7 @@ void solve(){
 	ll ans5=0;
 	for(int i=0;i<n;i++)
 	{
-	ans5+=abs(v[i]-md2);
+	ans5+=std::abs(v[i]-md2);
  
 	}
 	cout<<ans5;
